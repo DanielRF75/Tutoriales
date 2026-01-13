@@ -72,8 +72,15 @@ sudo chown -R $USER:$USER src
 
 ### Permisos requeridos por Laravel
 
+#### Debian/Ubuntu
 ```bash
 sudo chown -R www-data:www-data src/storage src/bootstrap/cache
+sudo chmod -R 775 src/storage src/bootstrap/cache
+```
+
+#### Arch Linux / Manjaro / EndeavourOS
+```bash
+sudo chown -R http:http src/storage src/bootstrap/cache
 sudo chmod -R 775 src/storage src/bootstrap/cache
 ```
 
