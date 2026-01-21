@@ -102,3 +102,11 @@ Fase 3
     -sudo apt install git
     -git clone https://github.com/DanielRF75/Tutoriales.git
     -git config --global --add safe.directory /Tutoriales
+    -git branch retro-smart
+    -git checkout retro-smart
+    -git config pull.rebase true
+    -git pull origin retro-smart
+
+    -> instalar Java
+    - sudo apt update
+    - sudo apt install openjdk-21-jdk
